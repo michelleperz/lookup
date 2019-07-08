@@ -1,0 +1,8 @@
+---
+- hosts: all
+  become: yes
+
+  tasks:
+  - name: debug out user and pass
+    debug: 
+      msg: "My user name is {{ ansible_user }} and password is {{ ansible_password}}"
